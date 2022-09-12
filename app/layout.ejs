@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  </head>
+
+  <body>
+    <header class="bg-gray fixed-top">
+      <nav class="navbar navbar-expand-lg py-4 navbar-dark m-0">
+        <div class="border-line"></div>
+        <div class="container-fluid">
+          <div class="container d-lg-flex align-items-lg-center justify-content-lg-between">
+            <a class="navbar-brand p-0 m-0" href="index.html">
+            <img class="d-lg-block d-none p-0 m-0" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo.svg" alt="logo" height="42">
+            <img class="d-lg-none p-0 m-0" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week6-202207/logo2.svg" alt="logo" height="24">
+            </a>
+
+            <button class="navbar-toggler float-end align-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto text-center pt-0">
+                <li class="nav-item">
+                  <a class="nav-link active link-white fs-7 p-0 m-0" aria-current="page" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item ms-lg-5">
+                  <a class="nav-link link-white fs-7 p-0 m-0" href="class.html">課程介紹</a>
+                </li>
+                <li class="nav-item ms-lg-5">
+                    <a class="nav-link link-white fs-7 p-0 m-0" href="#">
+                    <span class="material-symbols-outlined fs-5 me-2 align-middle mb-1">
+                          account_circle
+                    </span>登入</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <%- contents %>
+
+    <footer class="bg-gray">
+      <div class="container py-3 py-md-4 text-center text-light">
+        <p class="mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

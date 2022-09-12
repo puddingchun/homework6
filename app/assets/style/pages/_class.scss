@@ -1,0 +1,54 @@
+.classButton{
+    padding-top: 130px;
+    background-color: $dark-black;
+    color: #fff;
+      .btn{
+        width: 163px;
+        border-radius: 8px;
+        &:hover{
+          color: $primary;
+          border-color: $primary;
+          background-color: transparent;
+        }
+    }
+}
+
+.lesson{
+    background-color: $dark-black;
+    padding-bottom: 80px;
+    color: #fff;
+    @include mobile{
+        padding-bottom: 40px;
+    }
+    .lesson-item{
+        background-color: $gray-custom;
+        border-radius: 24px;
+        .item-header {
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }   
+    }
+    .price{
+        font-size: 32px;
+        font-family: 'Azeret Mono', monospace;
+    }
+    .btn{
+        border-radius: 8px;
+        width: 168px;
+        height: 42px;
+        @include mobile{
+            width: 140px;
+        }
+    }
+    .btn-mix{
+        @include gradient-x;
+        border-radius: 8px;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
